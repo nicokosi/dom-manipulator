@@ -1,6 +1,11 @@
+const todoList = ['Buy milk 🥛', 'Do sport 🏃', 'Sleep 😴'];
+
 document.getElementById('app').innerHTML = `
-<h1>Hello! 👋</h1>
 <div>
-  🤓
-</div>
-`
+<ul>
+${todoList
+    .map(item => `<li>${item}</li>`)
+    .join('')
+}
+</ul>
+</div>`
