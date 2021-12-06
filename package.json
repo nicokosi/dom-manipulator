@@ -1,0 +1,6 @@
+{
+  "main": "index.html",
+  "scripts": {
+    "build": "babel --out-file bundle.js main.ts"
+  }
+}
