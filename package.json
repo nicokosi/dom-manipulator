@@ -5,6 +5,9 @@
     "lint": "eslint *.ts"
   },
   "devDependencies": {
+    "@babel/cli": "^7.16.0",
+    "@babel/core": "^7.16.0",
+    "@babel/preset-env": "^7.16.4",
     "@typescript-eslint/eslint-plugin": "^5.5.0",
     "@typescript-eslint/parser": "^5.5.0",
     "eslint": "^7.32.0",
@@ -12,5 +15,8 @@
     "eslint-plugin-import": "^2.25.3",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^5.2.0"
+  },
+  "dependencies": {
+    "@babel/preset-typescript": "^7.16.0"
   }
 }
