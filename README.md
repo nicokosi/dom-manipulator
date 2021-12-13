@@ -10,6 +10,6 @@ Install [npm](https://docs.npmjs.com/cli/) ([Volta](https://volta.sh) is recomme
 
 ## Run
 
-    npm run build
+    npm run build-watch
 
 Then open [index.html](./index.html) in your favorite web browser.
