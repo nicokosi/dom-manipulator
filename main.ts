@@ -8,13 +8,21 @@ document.getElementById('app').innerHTML = `
 <div class="todo-list">
 <ul>
 ${todoList
-    .map(item => `
-    <div class='todo-list-item'>
-    <li>${item.title}</li>
-    </div>`)
+    .map((item, index) => `
+    <li>
+        <div
+            id='item${index}'
+            class='todo-list-item'
+            onclick='document.querySelector("#detail${index}").style.display = "block"'>
+            ${item.title}
+        </div>
+        <div
+            id='detail${index}'
+            class='todo-list-detail'
+            onclick='document.querySelector("#detail${index}").style.display = "none"'>
+            Notes: ${item.notes}</div>
+    </li>`)
     .join('')
 }
 </ul>
-</div>
-</div>
 </div>`

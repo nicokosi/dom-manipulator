@@ -11,3 +11,8 @@
 .todo-list-item li {
     list-style: disclosure-closed;
 }
+
+.todo-list-detail {
+    background-color: rgb(221, 218, 202);
+    display: none;
+}
