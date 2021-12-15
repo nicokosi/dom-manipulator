@@ -20,7 +20,11 @@ ${todoList
             id='detail${index}'
             class='todo-list-detail'
             onclick='document.querySelector("#detail${index}").style.display = "none"'>
-            Notes: ${item.notes}</div>
+            <a href="#" class="close"></a>
+            <div>Title: ${item.title}</div>
+            <div>Priority: ${item.prioriy}</div>
+            <div>Notes: ${item.notes}</div>
+        </div>
     </li>`)
     .join('')
 }
