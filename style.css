@@ -2,19 +2,21 @@
     color: #2a272b;
     background: #f0f2f3;
     border: 1px outset #1f4081;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Didot, Helvetica, sans-serif;
     font-size: 14px;
     display: flex;
     flex-direction: column;
-}
-
-.todo-list-item li {
-    list-style: disclosure-closed;
+    padding: 4px;
+    max-width: 400px;
 }
 
 .todo-list-detail {
-    background-color: rgb(221, 218, 202);
+    background-color: rgb(206, 215, 228);
+    padding: 4px;
+    padding-left: 20px;
     display: none;
+    -webkit-box-shadow: 5px 5px 5px 5px rgba(50, 55, 73, 0.12);
+    box-shadow: 5px 5px 5px 5px rgba(50, 55, 73, 0.25);
 }
 
 .todo-list-detail div {
