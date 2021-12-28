@@ -1,6 +1,7 @@
 # DOM manipulator 🧪
 
-A toy project to experiment with TypeScript, HTML and CSS.
+A toy project to experiment with TypeScript, HTML and CSS:
+![Preview](./preview.gif)
 
 ## Setup
 
