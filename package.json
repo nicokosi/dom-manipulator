@@ -3,19 +3,26 @@
   "scripts": {
     "build": "babel --out-file bundle.js main.ts",
     "build-watch": "babel --watch --out-file bundle.js main.ts",
-    "lint": "eslint *.ts"
+    "lint": "eslint *.ts",
+    "serve": "npx serve",
+    "end-to-end-tests:open": "cypress open",
+    "end-to-end-tests": "cypress run"
   },
   "devDependencies": {
     "@babel/cli": "^7.16.0",
     "@babel/core": "^7.16.0",
     "@babel/preset-env": "^7.16.4",
+    "@types/jest": "^27.0.3",
     "@typescript-eslint/eslint-plugin": "^5.5.0",
     "@typescript-eslint/parser": "^5.5.0",
+    "browserslist": "^4.19.1",
+    "cypress": "^9.2.0",
     "eslint": "^7.32.0",
     "eslint-config-standard": "^16.0.3",
     "eslint-plugin-import": "^2.25.3",
     "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-promise": "^5.2.0"
+    "eslint-plugin-promise": "^5.2.0",
+    "serve": "^13.0.2"
   },
   "dependencies": {
     "@babel/preset-typescript": "^7.16.0"
