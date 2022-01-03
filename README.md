@@ -11,6 +11,22 @@ Install [npm](https://docs.npmjs.com/cli/) ([Volta](https://volta.sh) is recomme
 
 ## Run
 
+Generate JavaScript code:
+
     npm run build-watch
 
-Then open [index.html](./index.html) in your favorite web browser.
+Then directly open [index.html](./index.html) in your favorite web browser.
+
+Note that you can also browse the page in HTTP via:
+
+    npm run serve
+
+## Test
+
+Serve via HTTP:
+
+    npm run serve
+
+Then run end-to-end tests:
+
+    npm run end-to-end-tests
