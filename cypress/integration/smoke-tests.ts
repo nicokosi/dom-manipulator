@@ -14,4 +14,18 @@ describe('Smoke tests', () => {
         .click()
         .should('not.be.visible');
     })
+
+    it('Checkbox hides an item', () => {
+      cy.visit('http://localhost:3000');
+      const todoIndex = 1;
+
+      cy.get(`#item${todoIndex} > label`)
+      .should('be.visible');
+
+      cy.get(`#item${todoIndex} > input`)
+        .click();
+      cy.get(`#item${todoIndex} > label`)
+        .should('not.exist');
+    })
+
   })
