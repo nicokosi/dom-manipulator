@@ -1,0 +1,14 @@
+name: Continuous Integration
+on: [push]
+jobs:
+  cypress-run:
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Checkout ↩️
+        uses: actions/checkout@v2
+      - name: Build ⚙️
+        run: npm install && npm run build
+      - name: Run end-to-end tests 🔍 
+        uses: cypress-io/github-action@v2
+        with:
+          start: npm run serve
