@@ -1,6 +1,6 @@
 describe('Smoke tests', () => {
 
-  it('Open a todo detail then close it', () => {
+  it('Open a todo detail then close it 🔍', () => {
     cy.visit('http://localhost:3000');
     const todoIndex = 1;
     cy.get(`#item${todoIndex} > label`)
@@ -16,11 +16,11 @@ describe('Smoke tests', () => {
       .should('not.be.visible');
   })
 
-  it('Checkbox hides an item', () => {
+  it('Checkbox hides an item 🙈', () => {
     cy.visit('http://localhost:3000');
     const todoIndex = 1;
     cy.get(`#item${todoIndex} > label`)
-      .as("item1")
+      .as('item1')
       .should('be.visible')
       .invoke('text')
       .then((label) => {
