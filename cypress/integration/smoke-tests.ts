@@ -35,4 +35,11 @@ describe('Smoke tests', () => {
       });
     })
 
+    it('Check that DOM can be manipulated 😇', () => {
+      cy.visit('http://localhost:3000');
+      document.body.remove()
+      cy.get('body', { timeout: 10000 })
+        .should('have.length', 1)
+    })
+
 })
