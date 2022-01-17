@@ -1,22 +1,17 @@
 describe('Smoke tests', () => {
 
-  it('Open a todo detail then close it 🔍', () => {
+  it('Show the detail on hover 🔍', () => {
     cy.visit('http://localhost:3000');
     const todoIndex = 1;
-    cy.get(`#item${todoIndex} > label`)
-      .click();
+    cy.get(`#item${todoIndex} > label`).trigger('mouseover')
 
     cy.get(`#detail${todoIndex}`)
       .should('be.visible');
 
     cy.screenshot();
-
-    cy.get(`#detail${todoIndex}`)
-      .click()
-      .should('not.be.visible');
   })
 
-  it('Checkbox hides an item 🙈', () => {
+  it('Hide an item when clicking on checkbox 🙈', () => {
     cy.visit('http://localhost:3000');
     const todoIndex = 1;
     cy.get(`#item${todoIndex} > label`)
