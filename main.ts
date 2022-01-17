@@ -53,14 +53,14 @@ function render() {
                     <div
                         id='item${index}'
                         class='todo-list-item'
-                        onclick='if (document.querySelector("#detail${index}")) { document.querySelector("#detail${index}").style.display = "block" }'>
+                        onmouseover='if (document.querySelector("#detail${index}")) { document.querySelector("#detail${index}").style.display = "block" }'>
                         <input type="checkbox" id="todo-${index}">
                         <label for="todo-${index}">${item.title}</label>
                     </div>
                     <div
                         id='detail${index}'
                         class='todo-list-detail'
-                        onclick='if (document.querySelector("#detail${index}")) { document.querySelector("#detail${index}").style.display = "none" }'>
+                        onmouseover='if (document.querySelector("#detail${index}")) { document.querySelector("#detail${index}").style.display = "none" }'>
                         <a href="#" class="close"></a>
                         <div>Priority: ${item.priority}</div>
                         <div>Notes: ${item.notes}</div>
@@ -73,7 +73,7 @@ function render() {
             for (let index = 0; index < todoList.length; index++) {
                 document.getElementById(`todo-${index}`)
                     ?.addEventListener(
-                        "click",
+                        "input",
                         (event) => {
                             todoList = todoList
                                 .map((item) => {
