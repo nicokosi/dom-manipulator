@@ -1,5 +1,15 @@
 describe('Smoke tests', () => {
 
+  beforeEach(function () {
+    cy.intercept(
+      {
+        method: 'GET',
+        url: 'https://random-words-api.vercel.app/word',
+      },
+      [{ "word": "fake-random-word" }])
+      .as('word')
+  })
+
   it('Show the detail on hover 🔍', () => {
     cy.visit('http://localhost:3000');
     const todoIndex = 1;
