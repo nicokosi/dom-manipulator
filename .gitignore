@@ -1,6 +1,5 @@
-node_modules
+.idea/
 bundle.js
-
 cypress/screenshots
 cypress/videos
-.idea/
+node_modules
