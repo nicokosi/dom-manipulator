@@ -3,3 +3,4 @@ bundle.js
 
 cypress/screenshots
 cypress/videos
+.idea/
