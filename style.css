@@ -10,6 +10,14 @@
     max-width: 400px;
 }
 
+li {
+    list-style: none
+}
+
+li.completed {
+    text-decoration: line-through;
+}
+
 .todo-list-detail {
     background-color: rgb(206, 215, 228);
     padding: 4px;

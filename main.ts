@@ -47,16 +47,16 @@ function render() {
             }
             document.getElementById('app').innerHTML = `
             <div class="todo-list">
+            <ul>
             ${todoList
-                    .filter((item) => item.status === 'TODO')
                     .map((item, index) => `
-                    <div
+                    <li
                         id='item${index}'
-                        class='todo-list-item'
+                        class='todo-list-item ${item.status === "DONE" ? 'completed' : ''}'
                         onmouseover='if (document.querySelector("#detail${index}")) { document.querySelector("#detail${index}").style.display = "block" }'>
-                        <input type="checkbox" id="todo-${index}">
+                        <input type="checkbox" id="todo-${index}" ${item.status === "DONE" ? 'checked' : ''}>
                         <label for="todo-${index}">${item.title}</label>
-                    </div>
+                    </li>
                     <div
                         id='detail${index}'
                         class='todo-list-detail'
@@ -67,7 +67,7 @@ function render() {
                     </div>`)
                     .join('')
                 }
-            </input>
+            </ul>
             </div>`
 
             for (let index = 0; index < todoList.length; index++) {
