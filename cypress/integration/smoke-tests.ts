@@ -21,23 +21,18 @@ describe('Smoke tests', () => {
     cy.screenshot();
   })
 
-  it('Hide an item when clicking on checkbox 🙈', () => {
+  it('Mark item as completed when clicking on checkbox 🙈', () => {
     cy.visit('http://localhost:3000');
     const todoIndex = 1;
-    cy.get(`#item${todoIndex} > label`)
+    cy.get(`#item${todoIndex}`)
       .as('item1')
-      .should('be.visible')
-      .invoke('text')
-      .then((label) => {
-        cy.get('@item1')
-          .should('have.text', label);
+      .should('not.have.class', 'completed');
 
-        cy.get("@item1")
-          .click();
+    cy.get(`#todo-${todoIndex}`)
+      .click();
 
-        cy.get('@item1')
-          .should('not.have.text', label);
-      });
+    cy.get('@item1')
+      .should('have.class', 'completed');
     })
 
     it('Check that DOM can be manipulated 😇', () => {
