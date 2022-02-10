@@ -53,14 +53,14 @@ function render () {
                     <li
                         id='item${index}'
                         class='todo-list-item ${item.status === 'DONE' ? 'completed' : ''}'
-                        onmouseover='if (document.querySelector("#detail${index}")) { document.querySelector("#detail${index}").style.display = "block" }'>
+                        onmouseover='if (document.querySelector("#detail${index}")) { document.querySelector("#detail${index}").style.display = "block" }'
+                        onmouseout='if (document.querySelector("#detail${index}")) { document.querySelector("#detail${index}").style.display = "none" }'>
                         <input type="checkbox" id="todo-${index}" ${item.status === 'DONE' ? 'checked' : ''}>
                         <label for="todo-${index}">${item.title}</label>
                     </li>
                     <div
                         id='detail${index}'
-                        class='todo-list-detail'
-                        onmouseover='if (document.querySelector("#detail${index}")) { document.querySelector("#detail${index}").style.display = "none" }'>
+                        class='todo-list-detail'>
                         <a href="#" class="close"></a>
                         <div>Priority: ${item.priority}</div>
                         <div>Notes: ${item.notes}</div>
