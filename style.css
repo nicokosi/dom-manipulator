@@ -11,6 +11,13 @@
     border-radius: 1px;
 }
 
+.message {
+    color: #2a272b;
+    font-family: Didot, Helvetica, sans-serif;
+    font-size: 14px;
+    display: inline-block;
+}
+
 li {
     list-style: none
 }
