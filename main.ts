@@ -89,6 +89,7 @@ function render () {
                 })
               render()
             })
+        document.querySelector('span.message').innerHTML = ''
       }
     })
 }
