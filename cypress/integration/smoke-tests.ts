@@ -1,20 +1,19 @@
 describe('Smoke tests', () => {
-
-  function mockRandomWordsService() {
+  function mockRandomWordsService () {
     cy.intercept(
       {
         method: 'GET',
-        url: 'https://random-words-api.vercel.app/word',
+        url: 'https://random-words-api.vercel.app/word'
       },
-      [{ 'word': 'fake-random-word' }])
+      [{ word: 'fake-random-word' }])
       .as('word')
   }
 
   it('Show loading message ⏳', () => {
     let loadWords
-    const trigger = new Cypress.Promise((resolve) => loadWords = resolve)
+    const trigger = new Cypress.Promise((resolve) => (loadWords = resolve))
     cy.intercept('https://random-words-api.vercel.app/word', (req) => {
-      return trigger.then(() => req.reply([{ 'word': 'fake-random-word' }]))
+      return trigger.then(() => req.reply([{ word: 'fake-random-word' }]))
     })
 
     cy.visit('http://localhost:3000')
@@ -51,14 +50,13 @@ describe('Smoke tests', () => {
 
     cy.get('@item1')
       .should('have.class', 'completed')
-    })
+  })
 
-    it('Check that DOM can be manipulated 😇', () => {
-      mockRandomWordsService()
-      cy.visit('http://localhost:3000')
-      document.body.remove()
-      cy.get('body', { timeout: 10000 })
-        .should('have.length', 1)
-    })
-
+  it('Check that DOM can be manipulated 😇', () => {
+    mockRandomWordsService()
+    cy.visit('http://localhost:3000')
+    document.body.remove()
+    cy.get('body', { timeout: 10000 })
+      .should('have.length', 1)
+  })
 })
