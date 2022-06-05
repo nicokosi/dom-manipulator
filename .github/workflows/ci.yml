@@ -13,6 +13,6 @@ jobs:
       - name: Build 🏭
         run: npm run build
       - name: Run end-to-end tests 🔍 
-        uses: cypress-io/github-action@v2
+        uses: cypress-io/github-action@v4
         with:
           start: npm run serve
