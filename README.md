@@ -21,6 +21,20 @@ Note that you can also browse the page in HTTP via:
 
     npm run serve
 
+## Lint
+
+Lint the code:
+
+    npm run lint
+
+Lint and fix the code:
+
+    npm run lint:fix
+
+Lint the CSS:
+
+    npm run lint:css
+
 ## Test
 
 Serve via HTTP:
