@@ -12,7 +12,7 @@ jobs:
         run: npm run lint
       - name: Build 🏭
         run: npm run build
-      - name: Run end-to-end tests 🔍 
+      - name: Run end-to-end tests 🔍
         uses: cypress-io/github-action@v4
         with:
           start: npm run serve
