@@ -3,9 +3,11 @@
   "scripts": {
     "build": "babel --out-file bundle.js main.ts",
     "build-watch": "babel --watch --out-file bundle.js main.ts",
+    "format:check": "npx prettier --check .",
+    "format": "npx prettier --write .",
     "lint": "npx eslint . --ext .js,.jsx,.ts,.tsx",
-    "lint:fix": "npx eslint --fix . --ext .js,.jsx,.ts,.tsx",
     "lint:css": "npx stylelint **/*.css",
+    "lint:fix": "npx eslint --fix . --ext .js,.jsx,.ts,.tsx",
     "serve": "npx serve",
     "end-to-end-tests:open": "cypress open",
     "end-to-end-tests": "cypress run"
