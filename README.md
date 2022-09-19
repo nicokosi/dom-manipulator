@@ -21,6 +21,16 @@ Note that you can also browse the page in HTTP via:
 
     npm run serve
 
+## Format
+
+Format the code:
+
+    npm run format
+
+Check the code format:
+
+    npm run format:check
+
 ## Lint
 
 Lint the code:

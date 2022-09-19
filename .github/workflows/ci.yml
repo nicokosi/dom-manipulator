@@ -8,11 +8,13 @@ jobs:
         uses: actions/checkout@v3
       - name: Install ⚙️
         run: npm clean-install
+      - name: Check format 👮
+        run: npm run format:check
       - name: Lint 👮
         run: npm run lint
       - name: Build 🏭
         run: npm run build
-      - name: Run end-to-end tests 🔍 
+      - name: Run end-to-end tests 🔍
         uses: cypress-io/github-action@v4
         with:
           start: npm run serve
