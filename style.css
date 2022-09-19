@@ -1,38 +1,38 @@
 .todo-list {
-    color: #2a272b;
-    background: #ffffff;
-    border: 1px outset #777d8a;
-    font-family: Didot, Helvetica, sans-serif;
-    font-size: 14px;
-    display: flex;
-    flex-direction: column;
-    padding: 4px;
-    max-width: 400px;
-    border-radius: 1px;
+  color: #2a272b;
+  background: #ffffff;
+  border: 1px outset #777d8a;
+  font-family: Didot, Helvetica, sans-serif;
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  padding: 4px;
+  max-width: 400px;
+  border-radius: 1px;
 }
 
 .message {
-    color: #2a272b;
-    font-family: Didot, Helvetica, sans-serif;
-    font-size: 14px;
-    display: inline-block;
+  color: #2a272b;
+  font-family: Didot, Helvetica, sans-serif;
+  font-size: 14px;
+  display: inline-block;
 }
 
 li {
-    list-style: none
+  list-style: none;
 }
 
 li.completed {
-    text-decoration: line-through;
+  text-decoration: line-through;
 }
 
 .todo-list-detail {
-    padding: 4px;
-    padding-left: 20px;
-    display: none;
-    -webkit-box-shadow: 5px 5px 5px 5px rgba(50, 55, 73, 0.12);
-    box-shadow: 5px 5px 5px 5px rgba(50, 55, 73, 0.25);
-    opacity: 0.8;
-    background: rgb(247, 250, 152);
-    border-radius: 1px;
+  padding: 4px;
+  padding-left: 20px;
+  display: none;
+  -webkit-box-shadow: 5px 5px 5px 5px rgba(50, 55, 73, 0.12);
+  box-shadow: 5px 5px 5px 5px rgba(50, 55, 73, 0.25);
+  opacity: 0.8;
+  background: rgb(247, 250, 152);
+  border-radius: 1px;
 }
