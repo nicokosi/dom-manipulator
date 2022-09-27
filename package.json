@@ -32,7 +32,7 @@
     "serve": "14.1.1",
     "stylelint": "14.12.0",
     "stylelint-config-standard": "28.0.0",
-    "typescript": "4.8.3"
+    "typescript": "4.8.4"
   },
   "dependencies": {
     "@babel/preset-typescript": "^7.16.0"
