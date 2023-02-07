@@ -31,7 +31,7 @@ const emojis = [
 const priorities = ["low", "medium", "high"];
 
 async function randomWordFromExternalService() {
-  return fetch("https://random-words-api.vercel.app/word")
+  return fetch("https://random-words-api-nicokosi.vercel.app/")
     .then((response) => response.json())
     .then((data) => data[0].word);
 }
