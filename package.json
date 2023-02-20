@@ -13,8 +13,8 @@
     "end-to-end-tests": "cypress run"
   },
   "devDependencies": {
-    "@babel/cli": "7.20.7",
-    "@babel/core": "7.20.12",
+    "@babel/cli": "7.21.0",
+    "@babel/core": "7.21.0",
     "@babel/preset-env": "7.20.2",
     "@types/jest": "29.4.0",
     "@typescript-eslint/eslint-plugin": "5.52.0",
