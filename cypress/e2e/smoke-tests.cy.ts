@@ -5,7 +5,7 @@ describe("Smoke tests", () => {
         method: "GET",
         url: "https://random-words-api.vercel.app/word",
       },
-      [{ word: "fake-random-word" }]
+      [{ word: "fake-random-word" }],
     ).as("word");
   }
 
