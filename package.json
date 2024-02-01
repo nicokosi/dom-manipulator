@@ -16,7 +16,7 @@
     "@babel/cli": "7.23.4",
     "@babel/core": "7.23.7",
     "@babel/preset-env": "7.23.7",
-    "@types/jest": "29.5.11",
+    "@types/jest": "29.5.12",
     "@typescript-eslint/eslint-plugin": "6.17.0",
     "@typescript-eslint/parser": "6.17.0",
     "browserslist": "4.22.2",
